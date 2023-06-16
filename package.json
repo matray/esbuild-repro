@@ -1,0 +1,25 @@
+{
+  "name": "esbuild-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc index.ts --outFile out.js --module system",
+    "bundle": "esbuild index.ts internal.ts internal2.ts internal3.ts --outdir=dist/ --bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matray/esbuild-repro.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matray/esbuild-repro/issues"
+  },
+  "homepage": "https://github.com/matray/esbuild-repro#readme",
+  "devDependencies": {
+    "esbuild": "^0.18.3",
+    "typescript": "^5.1.3"
+  }
+}

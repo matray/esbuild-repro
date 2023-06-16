@@ -1,0 +1,1 @@
+export declare const CONCURRENCY_LIMITER: unique symbol
